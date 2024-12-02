@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+        .review-container {
+            max-width: 500px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .profile-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .reviewer-name {
+            font-weight: bold;
+        }
+        .review-body {
+            margin-top: 10px;
+        }
+        .stars {
+            color: #ffa41b;
+        }
+        .review-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        .review-date, .review-size {
+            color: #555;
+            font-size: 0.9em;
+        }
+        .verified-purchase {
+            color: #c45500;
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+        .review-text {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        .review-footer {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            align-items: center;
+            
+        }
+        .helpful-btn, .report-btn, .like-btn, .dislike-btn {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            background: #f9f9f9;
+            cursor: pointer;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+        .helpful-btn:hover, .report-btn:hover, .like-btn:hover, .dislike-btn:hover {
+            background: #e2e2e2;
+        }
+        .like-dislike-count {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>z
+   
+    <div class="review-container">
+        <div class="review-header">
+            <img src="free-photo-of-man-in-forest-in-black-and-white.jpeg" alt="Profile picture" class="profile-img">
+            <div class="reviewer-name">Babli</div>
+        </div>
+        
+        <div class="review-body">
+            <div class="stars">★★★★☆</div>
+            <div class="review-title">Beautiful and Serene</div>
+            <div class="review-date">Reviewed in India on 15 October 2024</div>
+            <div class="review-size">Visited: Ananthagiri Hills <span class="verified-purchase">Verified Visit</span></div>
+            <p class="review-text">
+                Ananthagiri Hills is an absolutely breathtaking place with scenic views and peaceful surroundings. Perfect for a weekend getaway! 
+                The trek was refreshing, and the overall experience was fantastic. Highly recommend this spot for nature lovers.
+            </p>
+        </div>
+
+        <div class="review-footer">
+            <button class="like-btn" onclick="likeReview(this)">👍 Like <span class="like-dislike-count">0</span></button>
+            <button class="dislike-btn" onclick="dislikeReview(this)">👎 Dislike <span class="like-dislike-count">0</span></button>
+            <button class="helpful-btn">Helpful</button>
+            <button class="report-btn">Report</button>
+        </div>
+    </div>
+
+    <div class="review-container">
+        <div class="review-header">
+            <img src="pexels-alberlan-11992422.jpeg" alt="Profile picture" class="profile-img">
+            <div class="reviewer-name">Arjun Kumar</div>
+        </div>
+        
+        <div class="review-body">
+            <div class="stars">★★★★★</div>
+            <div class="review-title">A Hidden Gem</div>
+            <div class="review-date">Reviewed in India on 15 October 2024</div>
+            <div class="review-size">Visited: Ananthagiri Hills <span class="verified-purchase">Verified Visit</span></div>
+            <p class="review-text">
+                Ananthagiri Hills is a hidden gem, especially for those who love nature and tranquil surroundings. The view from the hilltops is mesmerizing, and the greenery is a refreshing break from city life. We went for a sunrise trek, and the trail was moderately challenging but totally worth it for the stunning scenery along the way.
+            </p>
+        </div>
+
+        <div class="review-footer">
+            <button class="like-btn" onclick="likeReview(this)">👍 Like <span class="like-dislike-count">0</span></button>
+            <button class="dislike-btn" onclick="dislikeReview(this)">👎 Dislike <span class="like-dislike-count">0</span></button>
+            <button class="helpful-btn">Helpful</button>
+            <button class="report-btn">Report</button>
+        </div>
+    </div>
+
+    
+    <div class="review-container">
+        <div class="review-header">
+            <img src="pexels-alberlan-11992422.jpeg" alt="Profile picture" class="profile-img">
+            <div class="reviewer-name">Priya Sen</div>
+        </div>
+        
+        <div class="review-body">
+            <div class="stars">★★★★★</div>
+            <div class="review-title">Perfect Nature Getaway</div>
+            <div class="review-date">Reviewed in India on 20 October 2024</div>
+            <div class="review-size">Visited: Ananthagiri Hills <span class="verified-purchase">Verified Visit</span></div>
+            <p class="review-text">
+                This place is wonderful for a quick escape from city life. The greenery and natural beauty are amazing, and the trek is enjoyable for all levels. It’s a great place for family trips, solo treks, or outings with friends.
+            </p>
+            
+        </div>
+
+        <div class="review-footer">
+            <button class="like-btn" onclick="likeReview(this)">👍 Like <span class="like-dislike-count">0</span></button>
+            <button class="dislike-btn" onclick="dislikeReview(this)">👎 Dislike <span class="like-dislike-count">0</span></button>
+            <button class="helpful-btn">Helpful</button>
+            <button class="report-btn">Report</button>
+            <button class="see more-btn">see more</button>
+
+        </div>
+    </div>
+
+    <script>
+        function likeReview(button) {
+            let countSpan = button.querySelector('.like-dislike-count');
+            countSpan.textContent = parseInt(countSpan.textContent) + 1;
+        }
+
+        function dislikeReview(button) {
+            let countSpan = button.querySelector('.like-dislike-count');
+            countSpan.textContent = parseInt(countSpan.textContent) + 1;
+        }
+    </script>
+</body>
+</html>

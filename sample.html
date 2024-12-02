@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">Wanderlust</div>
+        <div class="search">
+            <input type="text" placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="login">
+            <a href="#" class="book-btn">Sign in</a>
+            <button class="book-btn">Login</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Most Popular Places In Telangana</h1>
+            <p>Explore breathtaking destinations and create unforgettable memories with our curated travel experiences.</p>
+            <div class="places-navigation">
+                <!-- Navigation Buttons -->
+                <button id="prev-button" class="nav-button" disabled>&lt;</button>
+                <div class="places" id="places-container">
+                    <!-- Cards -->
+                    <div class="cards active">
+                        <div class="card-image">
+                            <img src="https://www.trawell.in/admin/images/upload/249844684Anantagiri_Main.jpg" alt="Ananthagiri Hills" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h2>Ananthagiri Hills</h2>
+                            <p>Experience the serene beauty of Ananthagiri Hills.</p>
+                            <a href="Discover More.html" class="button">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-image">
+                            <img src="nehru-zoological-park-hyderabad-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Nehru Zoological Park" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h2>Nehru Zoological Park</h2>
+                            <p>Explore wildlife at Nehru Zoological Park.</p>
+                            <a href="Discover More.html" class="button">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-image">
+                            <img src="https://partner.wonderla.com/index/images/Wonderlahdb.png" alt="Wonderla" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h2>Wonderla</h2>
+                            <p>Enjoy each ride.</p>
+                            <a href="Discover More.html" class="button">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-image">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.fnnNVz71X70O006L-iBCsgHaFQ&pid=Api&P=0&h=180" alt="Ramoji Film City" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h2>Ramoji Film City</h2>
+                            <p>Explore the iconic Ramoji Film City.</p>
+                            <a href="Discover More.html" class="button">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-image">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.gwoAkxtg6SrXbm3su_UJwgHaKc&pid=Api&P=0&h=180" alt="Charminar" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h2>Charminar</h2>
+                            <p>Discover the historical Charminar in Hyderabad.</p>
+                            <a href="Discover More.html" class="button">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-image">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.GXf8IUGSaqSAd6yKR64yhQHaFE&pid=Api&P=0&h=180" alt="Hussain Sagar Lake" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h2>Hussain Sagar Lake</h2>
+                            <p>Relax by the serene Hussain Sagar Lake.</p>
+                            <a href="Discover More.html" class="button">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <button id="next-button" class="nav-button">&gt;</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
