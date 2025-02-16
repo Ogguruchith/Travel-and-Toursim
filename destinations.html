@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyderabad Tourism</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #ff5722;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .quote {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin: 20px 0;
+      padding: 0 20px;
+      font-size: 18px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .card h3 {
+      margin: 15px 20px 10px;
+      color: #333;
+      font-size: 20px;
+    }
+    .card p {
+      margin: 10px 20px;
+      color: #666;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+    .info {
+      margin: 10px 20px;
+      font-size: 14px;
+    }
+    .info p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .rating {
+      color: #ff9800;
+      font-weight: bold;
+      margin: 0 20px 10px;
+      font-size: 16px;
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background-color: #ff5722;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 10px 20px 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #f4511e;
+    }
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hyderabad Tourism</h1>
+  </header>
+  <p class="quote">"Traveling—it leaves you speechless, then turns you into a storyteller." – Ibn Battuta</p>
+  
+  <div class="container">
+    <!-- Row 1 -->
+    <div class="card">
+      <img src="https://www.holidify.com/images/compressed/attractions/attr_1859.jpg" alt="Hussain Sagar Lake">
+      <h3>Hussain Sagar Lake</h3>
+      <p>Relax by the tranquil waters, enjoy boat rides, and view the iconic Buddha statue.</p>
+      <div class="info">
+        <p>🕒 9:00 AM - 6:00 PM</p>
+        <p>📍 Hyderabad</p>
+        <a href="https://maps.app.goo.gl/wSriBeCKRy2vuWFc6" target="_blank">📍 Hyderabad</a>
+
+      </div>
+      <p class="rating">⭐ 4.7</p>
+      <a href="Hussain Sagar Lake.html" class="btn">View Gallery</a>
+    </div>
+
+    <div class="card">
+      <img src="https://assets-news.housing.com/news/wp-content/uploads/2020/11/02184143/Everything-you-need-to-know-about-Golconda-Fort-FB-1200x700-compressed.jpg" alt="Golconda Fort">
+      <h3>Golconda Fort</h3>
+      <p>A magnificent fortress known for its acoustic marvels and light and sound show.</p>
+      <div class="info">
+        <p>🕒 8:00 AM - 5:30 PM</p>
+        <p>📍 Ibrahim Bagh, Hyderabad</p>
+        <a href="https://maps.app.goo.gl/3KxSVeiYhRpSU1aZ6" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.8</p>
+      <a href="Golconda Fort.html" class="btn">View Gallery</a>
+    </div>
+
+    <div class="card">
+      <img src="http://3.bp.blogspot.com/-6hgx4aOg8DY/UuEc_ceCcUI/AAAAAAAABKE/tu5ABP7nr7E/s1600/chilkurbalajitempleentrance.JPG" alt="Chilkur Balaji">
+      <h3>Chilkur Balaji Temple</h3>
+      <p>Experience a chill adventure in India's first indoor snow park with fun activities.</p>
+      <div class="info">
+        <p>🕒 10:00 AM - 8:00 PM</p>
+        <p>📍 Near MG Road, Hyderabad</p>
+        <a href="https://maps.app.goo.gl/6p9PFZRWeY89wprQ6" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.4</p>
+      <a href="Balaji.html" class="btn">View Gallery</a>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.45I3jlqWBcJqQQCq1Pb-2wHaFL&pid=Api&P=0&h=180" alt="Birla Planetarium">
+      <h3>Birla Planetarium</h3>
+      <p>Discover the wonders of the universe at this iconic science museum and planetarium.</p>
+      <div class="info">
+        <p>🕒 10:00 AM - 6:00 PM</p>
+        <p>📍 Hill Fort Road, Hyderabad</p>
+        <a href="https://maps.app.goo.gl/4eKGq5oUanmZKmBz7" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.6</p>
+      <a href="Birla.html" class="btn">View Gallery</a>
+    </div>
+
+    <div class="card">
+      <img src="https://3.bp.blogspot.com/-ty6sAqo50b4/V0XIo8whMpI/AAAAAAAAEYI/Yb9nxhLzxS0RjqAOLCEDD11VSRQgD1JMwCLcB/s1600/CHARMINAR1.jpg" alt="Charminar">
+      <h3>Charminar</h3>
+      <p>The iconic symbol of Hyderabad, known for its grand architecture and historic charm.</p>
+      <div class="info">
+        <p>🕒 9:00 AM - 5:30 PM</p>
+        <p>📍 Old City, Hyderabad</p>
+        <a href="https://maps.app.goo.gl/YDVUow5R9wNYJaGe6" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.8</p>
+      <a href="charminar.html" class="btn">View Gallery</a>
+    </div>
+
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.fnnNVz71X70O006L-iBCsgHaFQ&pid=Api&P=0&h=180" alt="Ramoji Film City">
+      <h3>Ramoji Film City</h3>
+      <p>Visit the world's largest film city and explore movie sets, gardens, and entertainment zones.</p>
+      <div class="info">
+        <p>🕒 9:00 AM - 5:30 PM</p>
+        <p>📍 Hyderabad</p>
+        <a href="https://maps.app.goo.gl/WD5w6amoEsqZ3wvB9" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.6</p>
+      <a href="Ramoji.html" class="btn">View Gallery</a>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="card">
+      <img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_1473,h_828,r_0,c_crop,q_60,fl_progressive/w_960,f_auto,c_fit/hyderabad-park/Wonderla_Main_Shot_EXT_co7wl1" alt="Wonderla">
+      <h3>Wonderla Amusement Park</h3>
+      <p>Enjoy thrilling rides and water slides at Hyderabad's premier amusement park.</p>
+      <div class="info">
+        <p>🕒 11:00 AM - 7:00 PM</p>
+        <p>📍 Outer Ring Road, Hyderabad</p>
+        <a href="https://maps.app.goo.gl/aBuYVG3sxcq79Bh18" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.5</p>
+      <a href="Wonderla.html" class="btn">View Gallery</a>
+    </div>
+
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.AhDg2sJkncJCmeTMNiv8JQHaFj&pid=Api&P=0&h=180" alt="Salar Jung Museum">
+      <h3>Salar Jung Museum</h3>
+      <p>Discover rare artifacts, sculptures, and paintings in this globally renowned museum.</p>
+      <div class="info">
+        <p>🕒 10:00 AM - 5:00 PM</p>
+        <p>📍 Near Musi River, Hyderabad</p>
+        <a href="https://maps.app.goo.gl/HXTRXfsXQauktQoo6" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.7</p>
+      <a href="Museum.html" class="btn">View Gallery</a>
+    </div>
+
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.6HV4aTOwQ0xFOi7DXa3sPwHaEK&pid=Api&P=0&h=180" alt="Lumbini Park">
+      <h3>Lumbini Park</h3>
+      <p>Relax in the serene surroundings of Lumbini Park and enjoy a laser show in the evening.</p>
+      <div class="info">
+        <p>🕒 9:00 AM - 9:00 PM</p>
+        <p>📍 Tank Bund, Hyderabad</p>
+        <a href="https://maps.app.goo.gl/q7rPjkWf2bQF7Rvb7" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.6</p>
+      <a href="lumbini.html" class="btn">View Gallery</a>
+
+    </div>
+    <div class="card">
+      <img src="https://cdn.siasat.com/wp-content/uploads/2020/09/Nehru-Zoological-Park.jpg" alt="Nehru-Zoological-Park">
+      <h3>Nehru Zoological Park</h3>
+      <p>Relax in the serene surroundings of Lumbini Park and enjoy a laser show in the evening.</p>
+      <div class="info">
+        <p>🕒 9:00 AM - 7:00 PM</p>
+        <p>📍 Tank Bund, Hyderabad</p>
+        <a href="https://maps.app.goo.gl/QyDwTdE78VWHG6Mr8" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.6</p>
+      <a href="Nehru Park.html" class="btn">View Gallery</a>
+    </div>
+    
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/A9wXhC5nFBs/maxresdefault.jpg" alt="Shilparamam">
+      <h3>Shilparamam</h3>
+      <p>Relax in the serene surroundings of Lumbini Park and enjoy a laser show in the evening.</p>
+      <div class="info">
+        <p>🕒 9:00 AM - 7:00 PM</p>
+        <p>📍 Tank Bund, Hyderabad</p>
+        <a href="https://maps.app.goo.gl/VpZbUxJTqdqt5bYk6" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.6</p>
+      <a href="Shilparamam.html" class="btn">View Gallery</a>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/JSK15g0a5m8/maxresdefault.jpg" alt="Jalavihar">
+      <h3>Jalavihar</h3>
+      <p>Relax in the serene surroundings of Lumbini Park and enjoy a laser show in the evening.</p>
+      <div class="info">
+        <p>🕒 9:00 AM - 7:00 PM</p>
+        <p>📍 Tank Bund, Hyderabad</p>
+        <a href="https://maps.app.goo.gl/7oRpZdicJMMLKEF88" target="_blank">📍 Hyderabad</a>
+      </div>
+      <p class="rating">⭐ 4.6</p>
+      <a href="Jalavihar.html" class="btn">View Gallery</a>
+    </div>
+
+  </div>
+</body>
+</html>

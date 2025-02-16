@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">Wanderlust</div>
         <div class="search">
-            <input type="text" placeholder="Search" aria-label="Search">
-            <i class="fas fa-search"></i>
+            <input type="text" id="search-input" placeholder="Search a place..." aria-label="Search">
+            <i class="fas fa-search search-icon" id="search-btn"></i>
         </div>
         <ul class="nav-links">
             <li><a href="destinations.html">Destinations</a></li>
@@ -26,11 +28,12 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="overlay">
             <div class="hero-content">
-                <h1 style="font-size: 3rem;">Discover Your Next Adventure</h1>
-                <p style="font-size: 1.5rem;">Explore breathtaking destinations...</p>
+                <h1>Discover Your Next Adventure</h1>
+                <p>Explore breathtaking destinations...</p>
             </div>
             <div class="search-container">
                 <div class="search-box">
@@ -42,51 +45,51 @@
                         <i class="fas fa-calendar"></i>
                         <input type="text" id="date-input" placeholder="When?" aria-label="Date">
                     </div>
-                    <button class="search-btn" onclick="redirectToDestination()">Search</button>
+                    <button class="search-btn" id="search-location-btn">Search</button>
                 </div>
             </div>
-            
         </div>
     </section>
 
+    <!-- Popular Places Section -->
     <section class="popular-places">
         <h2>Most Popular Places In Telangana</h2>
         <div class="places-navigation">
             <button id="prev-button" class="nav-button" disabled>&lt;</button>
             <div class="places" id="places-container">
-                <div class="cards active">
+                <div class="cards">
                     <div class="card-image">
-                        <img src="https://www.trawell.in/admin/images/upload/249844684Anantagiri_Main.jpg" alt="Ananthagiri Hills" loading="lazy">
+                        <img src="https://www.trawell.in/admin/images/upload/249844684Anantagiri_Main.jpg" alt="Ananthagiri Hills">
                     </div>
                     <div class="card-content">
                         <h3>Ananthagiri Hills</h3>
                         <p>Experience the serene beauty of Ananthagiri Hills.</p>
-                        <a href="Discover More.html" class="button">Discover More</a>
+                        <a href="DiscoverMore.html" class="button">Discover More</a>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="card-image">
-                        <img src="https://tse4.mm.bing.net/th?id=OIP.IRqL1X4411XNyyrU3B6vxAHaEK&pid=Api&P=0&h=180" alt="Nehru Zoological Park" loading="lazy">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.IRqL1X4411XNyyrU3B6vxAHaEK&pid=Api&P=0&h=180" alt="Nehru Zoological Park">
                     </div>
                     <div class="card-content">
                         <h3>Nehru Zoological Park</h3>
                         <p>Explore wildlife at Nehru Zoological Park.</p>
-                        <a href="Nehru Park.html" class="button">Learn More</a>
+                        <a href="NehruPark.html" class="button">Learn More</a>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="card-image">
-                        <img src="https://partner.wonderla.com/index/images/Wonderlahdb.png" alt="Wonderla" loading="lazy">
+                        <img src="https://partner.wonderla.com/index/images/Wonderlahdb.png" alt="Wonderla">
                     </div>
                     <div class="card-content">
                         <h3>Wonderla</h3>
-                        <p>Enjoy each ride.</p>
+                        <p>Enjoy thrilling rides and adventure.</p>
                         <a href="Wonderla.html" class="button">Learn More</a>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="card-image">
-                        <img src="https://tse4.mm.bing.net/th?id=OIP.fnnNVz71X70O006L-iBCsgHaFQ&pid=Api&P=0&h=180" alt="Ramoji Film City" loading="lazy">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.fnnNVz71X70O006L-iBCsgHaFQ&pid=Api&P=0&h=180" alt="Ramoji Film City">
                     </div>
                     <div class="card-content">
                         <h3>Ramoji Film City</h3>
@@ -96,7 +99,7 @@
                 </div>
                 <div class="cards">
                     <div class="card-image">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.gwoAkxtg6SrXbm3su_UJwgHaKc&pid=Api&P=0&h=180" alt="Charminar" loading="lazy">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.gwoAkxtg6SrXbm3su_UJwgHaKc&pid=Api&P=0&h=180" alt="Charminar">
                     </div>
                     <div class="card-content">
                         <h3>Charminar</h3>
@@ -109,33 +112,57 @@
         </div>
     </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const placesContainer = document.getElementById('places-container');
-            const prevButton = document.getElementById('prev-button');
-            const nextButton = document.getElementById('next-button');
-            
-            nextButton.addEventListener('click', () => {
-                placesContainer.scrollLeft += 320;
-                updateButtons();
-            });
-            
-            prevButton.addEventListener('click', () => {
-                placesContainer.scrollLeft -= 320;
-                updateButtons();
-            });
-            
-            function updateButtons() {
-                prevButton.disabled = placesContainer.scrollLeft <= 0;
-                nextButton.disabled = placesContainer.scrollLeft >= placesContainer.scrollWidth - placesContainer.clientWidth;
-            }
-            
-            updateButtons();
-            
-            placesContainer.addEventListener('scroll', updateButtons);
-        });
-        
-    </script>
-    
 </body>
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Destination mapping (all lowercase keys)
+    const destinations = {
+        "charminar": "charminar.html",
+        "wonderla": "Wonderla.html",
+        "ramoji film city": "Ramoji.html",
+        "ramoji": "Ramoji.html",
+        "nehru park": "NehruPark.html",
+        "nehru zoological park": "NehruPark.html",
+        "ananthagiri hills": "DiscoverMore.html",
+        "ananthagiri": "DiscoverMore.html"
+    };
+
+    // Function to handle search
+    function searchLocation(inputId) {
+        let query = document.getElementById(inputId).value.trim().toLowerCase(); // Normalize input
+
+        if (destinations.hasOwnProperty(query)) {
+            window.location.href = destinations[query]; // Redirect to correct page
+        } else {
+            alert("Destination not found! Please try a different location.");
+        }
+    }
+
+    // Search button in navbar
+    document.getElementById("search-btn").addEventListener("click", function () {
+        searchLocation("search-input");
+    });
+
+    // Search button in hero section
+    document.getElementById("search-location-btn").addEventListener("click", function () {
+        searchLocation("location-input");
+    });
+
+    // Allow "Enter" key to trigger search
+    document.getElementById("search-input").addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            searchLocation("search-input");
+        }
+    });
+
+    document.getElementById("location-input").addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            searchLocation("location-input");
+        }
+    });
+});
+
+
+</script>

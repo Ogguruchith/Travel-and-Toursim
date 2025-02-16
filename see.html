@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyderabad Hotels</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .quote {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin: 20px 0;
+      padding: 0 20px;
+      font-size: 18px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .card h3 {
+      margin: 15px 20px 10px;
+      color: #333;
+      font-size: 20px;
+    }
+    .card p {
+      margin: 10px 20px;
+      color: #666;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+    .info {
+      margin: 10px 20px;
+      font-size: 14px;
+    }
+    .info p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .price {
+      color: #27ae60;
+      font-weight: bold;
+      margin: 0 20px 10px;
+      font-size: 18px;
+    }
+    .rating {
+      color: #f39c12;
+      font-weight: bold;
+      margin: 0 20px 10px;
+      font-size: 16px;
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background-color: #2c3e50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 10px 20px 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #34495e;
+    }
+    .amenities {
+      display: flex;
+      gap: 10px;
+      margin: 0 20px 10px;
+      flex-wrap: wrap;
+    }
+    .amenity {
+      background-color: #f8f9fa;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #666;
+    }
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Luxury Hotels in Hyderabad</h1>
+  </header>
+  <p class="quote">"A great hotel ought to offer us the opportunity to live a better version of our everyday lives." – Alain de Botton</p>
+  
+  <div class="container">
+    <!-- Row 1 -->
+    <div class="card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/0d/31/3c/the-golkonda-hyderabad.jpg?w=1400&h=-1&s=1" alt="Taj Golconda Hotel">
+      <h3> The Golkonda Hotel</h3>
+      <p>10-1-124 Mehdipatnam - Banjara Hills Rd. Masab Tank, Hyderabad 500028 India
+        2.6 km from Hussain Sagar Lake
+        #61 Best Value of 1714 Hotels near Hussain Sagar Lake
+        "The food was typically brilliant, Mr Ashish was a polite and kind professional. The kids always want to come back This time in particular, the Khada Ghosh was quite tasty. The murgh malai kebab was also succulent..."</p>
+      <div class="info">
+        <p>📍 Engine Bowli, Falaknuma</p>
+        <p>📞 +91 40 6629 8585</p>
+      </div>
+      <div class="amenities">
+        <span class="amenity">🏊‍♂️ Pool</span>
+        <span class="amenity">🍽️ Restaurant</span>
+        <span class="amenity">🅿️ Parking</span>
+        <span class="amenity">💆‍♀️ Spa</span>
+      </div>
+      <p class="price">Starting from ₹8,000/night</p>
+      <p class="rating">⭐ 4.9</p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="ITC Kohenur">
+      <h3>ITC Kohenur</h3>
+      <p>Luxury business hotel with panoramic views of Durgam Cheruvu lake.</p>
+      <div class="info">
+        <p>📍 HITEC City</p>
+        <p>📞 +91 40 6766 0101</p>
+      </div>
+      <div class="amenities">
+        <span class="amenity">🏊‍♂️ Pool</span>
+        <span class="amenity">🍽️ Restaurant</span>
+        <span class="amenity">🏋️‍♂️ Gym</span>
+        <span class="amenity">🅿️ Parking</span>
+      </div>
+      <p class="price">Starting from ₹12,500/night</p>
+      <p class="rating">⭐ 4.8</p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Novotel Hyderabad">
+      <h3>Novotel Hyderabad</h3>
+      <p>Modern comfort meets convenience in the heart of HITEC City.</p>
+      <div class="info">
+        <p>📍 HITEC City</p>
+        <p>📞 +91 40 6682 4422</p>
+      </div>
+      <div class="amenities">
+        <span class="amenity">🏊‍♂️ Pool</span>
+        <span class="amenity">🍽️ Restaurant</span>
+        <span class="amenity">🏋️‍♂️ Gym</span>
+        <span class="amenity">👔 Business Center</span>
+      </div>
+      <p class="price">Starting from ₹8,500/night</p>
+      <p class="rating">⭐ 4.6</p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Park Hyatt Hyderabad">
+      <h3>Park Hyatt Hyderabad</h3>
+      <p>Sophisticated luxury hotel with art-filled interiors and fine dining.</p>
+      <div class="info">
+        <p>📍 Banjara Hills</p>
+        <p>📞 +91 40 4949 1234</p>
+      </div>
+      <div class="amenities">
+        <span class="amenity">🏊‍♂️ Pool</span>
+        <span class="amenity">🍽️ Restaurant</span>
+        <span class="amenity">💆‍♀️ Spa</span>
+        <span class="amenity">🎭 Art Gallery</span>
+      </div>
+      <p class="price">Starting from ₹11,000/night</p>
+      <p class="rating">⭐ 4.7</p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Westin Hyderabad">
+      <h3>Westin Hyderabad</h3>
+      <p>Wellness-focused luxury hotel with signature heavenly beds.</p>
+      <div class="info">
+        <p>📍 Mindspace, HITEC City</p>
+        <p>📞 +91 40 6767 6767</p>
+      </div>
+      <div class="amenities">
+        <span class="amenity">🏊‍♂️ Pool</span>
+        <span class="amenity">🧘‍♀️ Yoga</span>
+        <span class="amenity">🏋️‍♂️ Gym</span>
+        <span class="amenity">💆‍♀️ Spa</span>
+      </div>
+      <p class="price">Starting from ₹10,500/night</p>
+      <p class="rating">⭐ 4.7</p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Radisson Blu Plaza">
+      <h3>Radisson Blu Plaza</h3>
+      <p>Contemporary hotel with excellent business facilities and dining options.</p>
+      <div class="info">
+        <p>📍 Banjara Hills</p>
+        <p>📞 +91 40 6652 7777</p>
+      </div>
+      <div class="amenities">
+        <span class="amenity">🏊‍♂️ Pool</span>
+        <span class="amenity">🍽️ Restaurant</span>
+        <span class="amenity">👔 Business Center</span>
+        <span class="amenity">🅿️ Parking</span>
+      </div>
+      <p class="price">Starting from ₹7,500/night</p>
+      <p class="rating">⭐ 4.5</p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Trident Hyderabad">
+      <h3>Trident Hyderabad</h3>
+      <p>Elegant hotel with world-class amenities and impeccable service.</p>
+      <div class="info">
+        <p>📍 HITEC City</p>
+        <p>📞 +91 40 6623 2323</p>
+      </div>
+      <div class="amenities">
+        <span class="amenity">🏊‍♂️ Pool</span>
+        <span class="amenity">🍽️ Restaurant</span>
+        <span class="amenity">🏋️‍♂️ Gym</span>
+        <span class="amenity">💆‍♀️ Spa</span>
+      </div>
+      <p class="price">Starting from ₹9,500/night</p>
+      <p class="rating">⭐ 4.6</p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/ea/89/a4/hotel-ashoka.jpg?w=2000&h=-1&s=1" alt="Best Western Ashoka">
+      <h3>Best Western Ashoka</h3>
+      <p>6-1-70, Lakdikapul, Hyderabad 500004 India
+        1.6 km from Hussain Sagar Lake
+        "Rooms Rooms are good and provide standard amenities like towel, soap,shampoo,water bottles everyday Nearby activities Hussain sagar lake, birla temple, secretariat building, Ntr gardens,ujjaini mahakali temple all..."</p>
+      <div class="info">
+        <p>📍 6-1-70, Lakdikapul, Hyderabad 500004 India</p>
+        <p>📞 +91 040 2323 0105</p>
+      </div>
+      <div class="amenities">
+        <span class="amenity">🏊‍♂️ Pool</span>
+        <span class="amenity">🍽️ Restaurant</span>
+        <span class="amenity">🏋️‍♂️ Gym</span>
+        <span class="amenity">👔 Business Center</span>
+      </div>
+      <p class="price">Starting from ₹6,900/night</p>
+      <p class="rating">⭐ 4.7</p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Taj Deccan">
+      <h3>Taj Deccan</h3>
+      <p>Classic luxury hotel with a perfect blend of tradition and modernity.</p>
+      <div class="info">
+        <p>📍 Banjara Hills</p>
+        <p>📞 +91 40 6666 3939</p>
+      </div>
+      <div class="amenities">
+        <span class="amenity">🏊‍♂️ Pool</span>
+        <span class="amenity">🍽️ Restaurant</span>
+        <span class="amenity">💆‍♀️ Spa</span>
+        <span class="amenity">🎭 Entertainment</span>
+      </div>
+      <p class="price">Starting from ₹7,800/night</p>
+      <p class="rating">⭐ 4.6</p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  </div>
+</body>
+</html>
